@@ -11,8 +11,30 @@ API Gateway
 ↓  
 Auth Service  
 ↓  
-Report Service  
+Report Service 
 
+## Microservicios
+
+- **api-gateway**
+  - Punto de entrada del sistema.
+  - Recibe las solicitudes del cliente.
+
+- **auth-service**
+  - Maneja la autenticación de usuarios.
+  - Implementado con Node.js y Express.
+
+- **report-service**
+  - Encargado de la gestión de reportes del sistema.
+  - ## Ejemplo de endpoint
+
+POST /login
+
+Body:
+
+{
+  "email": "usuario@email.com",
+  "password": "123456"
+}
 ## Estructura del proyecto
 
 - api-gateway: punto de entrada para las solicitudes del sistema.
